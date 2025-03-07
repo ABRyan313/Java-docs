@@ -6,7 +6,6 @@ The List interface brings two new functionalities to plain collections.
 
 # Choosing your Implementation of the List Interface
 
-# Key Points: ArrayList vs LinkedList
 
 - **Collection vs List**:  
   - The `Collection` interface has no direct implementation in the Java Collections Framework.  
@@ -31,9 +30,7 @@ The List interface brings two new functionalities to plain collections.
   - If **frequent iteration** over elements is required.  
   - **Overall, ArrayList is the better default choice** in most cases.
 
- # Accessing the Elements Using an Index
-
- # Key Points: List Interface and Index-Based Methods
+ # Accessing the Elements Using an Index (List Interface and Index-Based Methods)
 
 - **Enhancements by List Interface**:  
   - The `List` interface extends `Collection` by adding **index-based methods**.  
@@ -99,9 +96,8 @@ The last pattern of this list is about inserting a collection at a given indexes
   - Instead of `null`, use `Comparator.naturalOrder()` to sort elements naturally.
  
 
-# Iterating over the Elements of a List
+# Iterating over the Elements of a List (ListIterator in Java)
 
-# Key Points: ListIterator in Java
 
 - **What is ListIterator?**  
   - The `ListIterator` provides an additional way to **iterate over a List**.  
