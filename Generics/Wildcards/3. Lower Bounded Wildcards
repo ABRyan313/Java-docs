@@ -1,0 +1,20 @@
+1. **Lower Bounded Wildcard (`? super Type`)** restricts the unknown type to a specific type **or its superclasses**.  
+   - Example: `List<? super Integer>` means the list can hold `Integer` **or** any of its **superclasses** (`Number`, `Object`).  
+
+2. **Difference from Upper Bounded Wildcard (`? extends Type`)**  
+   - `? extends Type` → Accepts **Type and its subtypes** (e.g., `List<? extends Number>` allows `Integer`, `Double`).  
+   - `? super Type` → Accepts **Type and its supertypes** (e.g., `List<? super Integer>` allows `Number`, `Object`).  
+   - **You can use either `extends` or `super`, but not both together.**  
+
+3. **Use Case**  
+   - If you need a method that can insert `Integer` into a list, you use `List<? super Integer>` to allow lists that can hold `Integer`, `Number`, or `Object`.  
+
+4. **Example Method: Adding Numbers to a List**  
+   ```java
+   public static void addNumbers(List<? super Integer> list) {
+       for (int i = 1; i <= 10; i++) {
+           list.add(i);
+       }
+   }
+   ```
+   - This method adds numbers **1 to 10** to a list that can hold `Integer` or a **superclass** of `Integer`.  
