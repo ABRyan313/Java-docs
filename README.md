@@ -1,2 +1,2 @@
 # Java-docs
-Notes on Java (theory based)
+Notes on Java Collections and Generics (theory based) 
