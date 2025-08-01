@@ -45,8 +45,3 @@ JwtTokenService
 |
 v
 AuthController
-
-```
-```
-
-Let me know if you want this saved to a downloadable `.md` file or need help visualizing it further.
