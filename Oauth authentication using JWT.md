@@ -1,5 +1,3 @@
-# 📘 JSON Web Token (JWT) in Spring Boot
-
 ## 🔐 What is JWT?
 
 **JWT** is a compact, URL-safe token format used to securely transmit information between parties. It consists of three parts:
