@@ -97,4 +97,144 @@ int[] a = {1, 2, 3, 4};
 
 ---
 
+### 21) Do constructors have return type? If no, what happens if you keep return type for a constructor?
+
+**No**, constructors in Java don’t have return type. If you keep return type for a constructor, it will be treated as a normal method and also compiler gives a warning saying that method has a constructor name.
+
+---
+
+### 22) What is no-arg constructor?
+
+Constructor without arguments is called no-arg constructor. Default constructor in Java is always a no-arg constructor.
+
+---
+
+### 23) What is the use of private constructors?
+
+Private constructors are used to restrict the instantiation of a class. When a class needs to prevent other classes from creating it’s objects then private constructors are suitable for that. Objects to the class which has only private constructors can be created within the class. A very good use of private constructor is in singleton pattern. This ensures only one instance of a class exist at any point of time.
+
+---
+
+### 24) Can we use this() and super() in a method?
+
+No, we can’t use this() and super() in a method.
+
+---
+
+### 25) What is the difference between class variables and instance variables?
+
+| Class Variables | Instance Variables |
+|----------------|--------------------|
+| Class variables are declared with keyword `static`. | Instance variables are declared without `static` keyword. |
+| Class variables are common to all instances of a class. These variables are shared between the objects of a class. | Instance variables are not shared between the objects of a class. Each instance will have their own copy of instance variables. |
+| As class variables are common to all objects of a class, changes made to these variables through one object will reflect in another. | As each object will have its own copy of instance variables, changes made to these variables through one object will not reflect in another object. |
+| Class variables can be accessed using either class name or object reference. | Instance variables can be accessed only through object reference. |
+
+---
+
+### 26) What is the constructor overloading? What is the use of constructor overloading?
+
+A class can have any number of constructors. These constructors will have different list of arguments. It is called constructor overloading. Constructor overloading provides different ways to instantiate a class.
+
+---
+
+### 27) What is the difference between constructor and method?
+
+Constructor is a special member of a class which is used to create the objects to the class. It is special because it will have same name as class. It will have no return type.
+
+Method is ordinary member of a class which is used to implement some behavior of a class. It will have it’s own name and return type.
+
+---
+
+### 28) What are the differences between static and non-static methods?
+
+Static method is common to all instances of a class. Static methods are stored in the class memory. Where as non-static methods are stored in the object memory. Each instance of a class will have their own copy of non-static methods.
+
+---
+
+### 29) Can we overload main() method?
+
+Yes, we can overload main() method. A Java class can have any number of main() methods. But to run the Java class, class should have main() method with signature as public static void main(String[] args). If you do any modification to this signature, compilation will be successful. But, you can’t run the Java program. You will get run time error as main method not found.
+
+---
+
+### 30) Can we declare main() method as private?
+
+No, main() method must be public. You can’t define main() method as private or protected or with no access modifier. This is because to make the main() method accessible to JVM.
+
+---
+
+### 31) Can we declare main() method as non-static?
+
+No, main() method must be declared as static so that JVM can call main() method without instantiating it’s class.
+
+---
+
+### 32) Why main() method must be static?
+
+Suppose, if main() is allowed to be non-static, then while calling the main method JVM has to instantiate it’s class. While instantiating it has to call constructor of that class. There will be an ambiguity if constructor of that class takes an argument that what argument JVM has to pass while instantiating class containing main() method.
+
+---
+
+### 33) Can we change the return type of a main() method?
+
+No, the return type of main() method must be void only.
+
+---
+
+### 35) What are access modifiers in Java?
+
+These are the modifiers which are used to restrict the visibility of a class or a field or a method or a constructor. Java supports 4 access modifiers.
+
+a) private : private fields or methods or constructors are visible within the class in which they are defined.
+
+b) protected : Protected members of a class are visible within the package but they can be inherited to sub classes outside the package.
+
+c) public : public members are visible everywhere.
+
+d) default or No-access modifiers : Members of a class which are defined with no access modifiers are visible within the package in which they are defined.
+
+(For more info on access modifiers, click here.)
+
+---
+
+### 36) What are non-access modifiers in Java?
+
+These are the modifiers which are used to achieve the functionalities other than the accessibility. For example,
+
+a) static : This modifier is used to specify whether a member is a class member or an instance member.
+
+b) final : It is used to restrict the further modification of a class or a method or a field. (for more on final, click here).
+
+c) abstract : abstract class or abstract method must be enhanced or modified further. (For more on abstract,  click here).
+
+d) synchronized : It is used to achieve thread safeness. Only one thread can execute a method or a block which is declared as synchronized at any given time. (for more on synchronized, click here.)
+
+(For more info on access Vs non-access modifiers, click here)
+
+---
+
+### 37) Can a method or a class be final and abstract at the same time?
+
+No, it is not possible. A class or a method can not be final and abstract at the same time. final and abstract are totally opposite in nature. final class or final method must not be modified further where as abstract class or abstract method must be modified further.
+
+---
+
+### 38) Can we declare a class as private?
+
+We can’t declare an outer class as private. But, we can declare an inner class (class as a member of another class) as private.
+
+---
+
+### 39) Can we declare an abstract method as private?
+
+No, abstract methods can not be private. They must be public or protected or default so that they can be modified further.
+
+---
+
+### 40) Can we use synchronized keyword with class?
+
+No. synchronized keyword can be used either with a method or block.
+
+---
 
