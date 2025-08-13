@@ -238,3 +238,174 @@ No. synchronized keyword can be used either with a method or block.
 
 ---
 
+### 41) A class can not be declared with synchronized keyword. Then, why we call classes like Vector, StringBuffer are synchronized classes?
+
+Any classes which have only synchronized methods and blocks are treated as synchronized classes. Classes like Vector, StringBuffer have only synchronized methods. That’s why they are called as synchronized classes.
+
+---
+
+### 42) What is type casting?
+
+When the data is converted from one data type to another data type
+
+---
+
+### 43) How many types of casting are there in Java?
+
+a) Primitive Casting : When the data is casted from one primitive type ( like int, float, double etc… ) to another primitive type, then it is called Primitive Casting.
+
+b) Derived Casting : When the data is casted from one derived type to another derived type, then it is called derived casting.
+
+---
+
+### 44) What is auto widening and explicit narrowing?
+
+The data is implicitly casted from small sized primitive type to big sized primitive type. This is called auto-widening. i.e The data is automatically casted from byte to short, short to int, int to long, long to float and float to double..
+
+You have to explicitly cast the data from big sized primitive type to small sized primitive type.  i.e you have to explicitly convert the data from double to float, float to long, long to int, int to short and short to byte. This is called explicit narrowing.
+
+---
+
+### 45) What is auto-up casting and explicit down casting?
+
+An object of sub class type can be automatically casted to super class type. This is called auto-up casting. An object of super class type should be explicitly casted to sub class type, It is called explicit down casting.
+
+---
+
+### Can an int primitive type of data implicitly casted to Double derived type?
+
+Yes, first int is auto-widened to double and then double is auto-boxed to Double.
+
+double d = 10;     //auto-widening from int to double
+  
+Double D =  d;     //auto-boxing from double to Double
+
+--- 
+
+### 47) What is ClassCastException?
+
+ClassCastException is an exception which occurs at run time when an object of one type can not be casted to another type. (Click here to see more on ClassCastException)
+
+---
+
+### 48) What is boxing and unboxing?
+
+Wrapping of primitive content into corresponding wrapper class object is called boxing. Unwrapping the wrapper class object into corresponding primitive content is called unboxing.
+
+--- 
+
+### 49) What is the difference between auto-widening, auto-upcasting and auto-boxing?
+
+Auto-widening occurs when small sized primitive type is casted to big sized primitive type. Auto-upcasting occurs when sub class type is casted to super class type. Auto-boxing occurs when primitive type is casted to corresponding wrapper class.
+
+---
+
+### 50) What is polymorphism in Java?
+
+Polymorphism refers to any entity whether it is a method or a constructor or an operator which takes many forms or can be used for multiple tasks.
+
+---
+
+### 51) What is method overloading in Java?
+
+When a class has more than one method with same name but different parameters, then we call those methods are overloaded. Overloaded methods will have same name but different number of arguments or different types of arguments.
+
+---
+
+### 52) What is the method signature? What are the things it consists of?
+
+Method signature is used by the compiler to differentiate the methods. Method signature consist of three things.
+
+Method name
+Number of arguments
+Types of arguments
+
+---
+
+### 53) How do compiler differentiate overloaded methods from duplicate methods?
+
+Compiler uses method signature to check whether the method is overloaded or duplicated. Duplicate methods will have same method signatures i.e same name, same number of arguments and same types of arguments. Overloaded methods will also have same name but differ in number of arguments or else in types of arguments.
+
+---
+
+### 54) Can we declare one overloaded method as static and another one as non-static?
+
+Yes. Overloaded methods can be either static or non static.
+
+### 55) Is it possible to have two methods in a class with same method signature but different return types?
+
+No, compiler will give duplicate method error. Compiler checks only method signature for duplication not the return types. If two methods have same method signature, straight away it gives compile time error.
+
+---
+
+### 56) In MyClass , there is a method called myMethod with four different overloaded forms. All four different forms have different visibility – private, protected, public and default. Is myMethod properly overloaded?
+
+Yes. Compiler checks only method signature for overloading of methods not the visibility of methods.
+
+---
+
+### 57) Can overloaded methods be synchronized?
+
+Yes. Overloaded methods can be synchronized.
+
+---
+
+### 58) Can we declare overloaded methods as final?
+
+Yes, overloaded methods can be final.
+
+---
+
+### 60) Overloading is the best example of dynamic binding. True or false? (Skipped 59)
+
+False. Overloading is the best example for static binding. (Click here to see what is static binding and what is dynamic binding)
+
+---
+
+### 61) Can overloaded method be overrided?
+
+Yes, we can override a method which is overloaded in super class.
+
+---
+
+### 62) What is method overriding in Java?
+
+Modifying a super class method in the sub class is called method overriding. Using method overriding, we can change super class method according to the requirements of sub class.
+
+---
+
+### 63) What are the rules to be followed while overriding a method?
+
+There are 5 main rules you should kept in mind while overriding a method. They are,
+
+a) Name of the method must be same as that of super class method.
+
+b) Return type of overridden method must be compatible with the method being overridden. i.e if a method has primitive type as it’s return type then it must be overridden with primitive type only and if a method has derived type as it’s return type then it must be overridden with same type or it’s sub class types.
+
+c) You must not reduce the visibility of a method while overriding.
+
+d) You must not change parameter list of a method while overriding.
+
+e) You can not increase the scope of exceptions while overriding a method with throws clause.
+
+---
+
+### 64) Can we override static methods? 
+
+No, static methods can not be overridden. If we try to override them they will be hidden in the sub class.
+
+---
+
+### 65) What happens if we change the arguments of overriding method?
+
+If we change the arguments of overriding method, then that method will be treated as overloaded not overridden.
+
+---
+
+
+
+
+ 
+
+
+
